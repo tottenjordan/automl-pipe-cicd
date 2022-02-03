@@ -13,9 +13,9 @@ from datetime import datetime
 #BUCKET_LOC = "[Your staging bucket locations]"
 #PIPELINE_NAME="[Your Pipeline Name]"
 
-PROJECT_ID ="demogct"
-BUCKET_LOC = "gs://demogct/vipipelines/"
-PIPELINE_NAME="sd-vertex-pipeline"
+PROJECT_ID ="jtotten-project"
+BUCKET_LOC = "gs://jtotten-us-central1/automl-pipe-cicid"
+PIPELINE_NAME="iris-vertex-pipeline"
 
 TIMESTAMP = datetime.now().strftime("%Y%m%d%H%M%S")
 DISPLAY_NAME = "flowers_" + TIMESTAMP
