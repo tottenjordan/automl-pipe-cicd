@@ -48,7 +48,7 @@ def pipeline(project: str = PROJECT_ID):
     
     endpoint_op = gcc_aip.ModelDeployOp(  
          model=training_job_run_op.outputs["model"],
-         project="demogct"
+         project="jtotten-project"
     )
   
 
