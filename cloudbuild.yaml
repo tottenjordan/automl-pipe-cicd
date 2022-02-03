@@ -18,4 +18,5 @@ steps:
 # Execute build
 - name: python
   entrypoint: python
-  args: [ "pipeline/pipeline_execute.py"] 
+  args: [ "pipeline/pipeline_execute.py"]
+  timeout: 2000s
