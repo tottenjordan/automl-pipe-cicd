@@ -13,9 +13,9 @@ from kfp.v2 import compiler
 # BUCKET_LOC = "[Your staging bucket locations]"
 # PIPELINE_NAME="[Your Pipeline Name]"
 
-PROJECT_ID ="demogct"
-BUCKET_LOC = "gs://demogct/vipipelines/"
-PIPELINE_NAME="sd-vertex-pipeline"
+PROJECT_ID ="jtotten-project"
+BUCKET_LOC = "gs://jtotten-us-central1/automl-pipe-cicid"
+PIPELINE_NAME="iris-vertex-pipeline"
 
 
 aip.init(project=PROJECT_ID, staging_bucket=BUCKET_LOC)
@@ -48,9 +48,9 @@ def pipeline(project: str = PROJECT_ID):
     
     endpoint_op = gcc_aip.ModelDeployOp(  
          model=training_job_run_op.outputs["model"],
-         project="demogct"
+         project="jtotten-project"
     )
-
+  
 
 
 compiler.Compiler().compile(
