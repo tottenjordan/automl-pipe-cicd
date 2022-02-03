@@ -31,12 +31,12 @@ def pipeline(project: str = PROJECT_ID):
 
     training_job_run_op = gcc_aip.AutoMLImageTrainingJobRunOp(
         project=project,
-        display_name="train-automl-flowers",
+        display_name="train-automl-flowers-v2",
         prediction_type="classification",
         model_type="CLOUD",
         base_model=None,
         dataset=ds_op.outputs["dataset"],
-        model_display_name="train-automl-flowers",
+        model_display_name="train-automl-flowers-v2",
         training_fraction_split=0.7,
         validation_fraction_split=0.2,
         test_fraction_split=0.1,
