@@ -19,7 +19,8 @@ PIPELINE_NAME="iris-vertex-pipeline"
 
 TIMESTAMP = datetime.now().strftime("%Y%m%d%H%M%S")
 DISPLAY_NAME = "flowers_" + TIMESTAMP
-PIPELINE_ROOT="gs://demogct/vipipelines/"
+# PIPELINE_ROOT="gs://demogct/vipipelines/"
+PIPELINE_ROOT="gs://jtotten-us-central1/automl-pipe-cicid/pipe-root/"
 
 job = aip.PipelineJob(
     display_name=DISPLAY_NAME,
